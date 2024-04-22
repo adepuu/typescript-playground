@@ -5,16 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon src/index.ts",
-    "start": "node dist/index.js"
+     "build": "tsc",
+     "dev": "nodemon --exec ts-node --esm src/index.ts",
+     "start": "node dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "adepuu",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+     "nodemon": "^3.1.0",
+     "ts-node": "^10.9.2",
+     "typescript": "^5.4.5"
   }
-}
+ }
+ 
