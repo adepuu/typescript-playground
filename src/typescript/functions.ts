@@ -3,25 +3,32 @@ export function rectangleArea (length:number, width:number):number{
     return length*width;
 }
 
-// function to get diametercircle
-export function diameterCircle (radius:number):number{
-    return 2*radius;
+// function to get detailcircle
+export function detailCircle (radius:number):string{
+    let diameter:number = 2*radius;
+    let circum:number = 2*radius* Math.PI;
+    let area:number = Math.pow(radius, 2)* Math.PI;
+
+    return `diameter = ${diameter}, circumference = ${circum.toFixed(4)}, area = ${area.toFixed(4)}`;
 }
 
-// function to get circumference
-export function circumference  (radius:number):number{
-    return 2*radius* Math.PI;
-}
-
-// function to get area circle
-export function areaCircle  (radius:number):number{
-    return Math.pow(radius, 2)* Math.PI;
-}
 
 // function to get angle 
 export function findAngle  (a:number, b:number):number{
-    return 180-a-b;
+    return 180-(a+b);
 }
+
+// function to get diff day 
+export function findDiffDate(x: string, y: string): number {
+    let firstDate: Date = new Date(x);
+    let secondDate: Date = new Date(y)
+
+    let timeDif: number = secondDate.getTime() - firstDate.getTime();
+    const result: number = timeDif / (24 * 3600 * 1000);
+
+    return result;
+}
+
 
 // function to get initial from fullname
 export function findInitial (a:string):string{
