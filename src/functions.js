@@ -7,4 +7,6 @@ function circle(radius) {
     var area = Math.PI * Math.pow((radius), 2);
     return "Diameter: ".concat(diameter, ", Circumference: ").concat(circumference, ", Area: ").concat(area);
 }
-console.log(circle(5));
+function triangle(a, b) {
+    return 180 - a - b;
+}

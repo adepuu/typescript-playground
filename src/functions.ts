@@ -10,4 +10,7 @@ function circle(radius:number){
     return `Diameter: ${diameter}, Circumference: ${circumference}, Area: ${area}`;
 }
 
-console.log(circle(5));
+function triangle(a:number, b:number){
+    return 180-a-b;
+}
+
