@@ -32,4 +32,4 @@ function initials(name:string){
     return nameStr;
 }
 
-console.log(initials("John Doe"));
+export { rectangle, circle, triangle, dateDiff, initials };
