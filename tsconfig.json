@@ -3,15 +3,16 @@
     "esModuleInterop": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "noEmit": false,
+    "noEmit": true,
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "allowImportingTsExtensions": true
   },
   "ts-node": {
     "esm": true
   },
   "include": ["types/**/*.ts", "./src/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }
