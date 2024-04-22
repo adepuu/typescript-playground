@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-     "target": "ESNext",
-     "module": "nodenext",
-     "moduleResolution": "nodenext",
-     "outDir": "dist",
-     "esModuleInterop": true,
-     "strict": true,
-     "skipLibCheck": true
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext"
   },
   "ts-node": {
-     "esm": true
+    "esm": true
   },
-  "include": ["types/**/*.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
- }
- 
+  "include": ["types/**/*.ts", "./src/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+}
