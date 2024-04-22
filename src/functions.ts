@@ -2,6 +2,12 @@ function rectangle(length:number, width:number){
     return length*width;
 }
 
-let a : number = 5;
-let b: number = 4;
+function circle(radius:number){
+    let diameter:number = radius * 2;
+    let circumference:number = Math.PI * diameter;
+    let area:number = Math.PI * (radius)**2;
 
+    return `Diameter: ${diameter}, Circumference: ${circumference}, Area: ${area}`;
+}
+
+console.log(circle(5));
