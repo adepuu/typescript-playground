@@ -1,12 +1,5 @@
 console.log("HEHE");
-import {
-  findRectangle,
-  circle,
-  triangleAngles,
-  diffDates,
-  getInitial,
-} from "./challenge/ch1.js";
-
+import { findRectangle, circle, triangleAngles, diffDates, getInitial, } from "./challenge/ch1.js";
 console.log(findRectangle(5, 3));
 console.log(circle(5));
 console.log(triangleAngles(80, 65));
