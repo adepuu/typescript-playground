@@ -15,3 +15,12 @@ function dateDiff(date1, date2) {
     var diffDays = difference / (1000 * 3600 * 24);
     return diffDays;
 }
+function initials(name) {
+    var nameStr = "";
+    var nameArr = name.split(" ");
+    nameArr.forEach(function (i) {
+        nameStr += i[0];
+    });
+    return nameStr;
+}
+console.log(initials("John Doe"));

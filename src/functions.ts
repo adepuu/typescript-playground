@@ -19,3 +19,17 @@ function dateDiff(date1:Date, date2:Date){
     let diffDays:number = difference/(1000 * 3600 * 24);
     return diffDays
 }
+
+function initials(name:string){
+    let nameStr:string = "";
+    let nameArr:string[] = name.split(" ");
+    nameArr.forEach(
+        (i) => {
+            nameStr+=i[0]
+        }
+    );
+
+    return nameStr;
+}
+
+console.log(initials("John Doe"));
