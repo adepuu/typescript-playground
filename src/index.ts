@@ -7,7 +7,13 @@ const result = areaRectangle(5, 3);
 console.log(result);
 
 // 2. Circle Area, Radius, circumference
-const circle = (radius: number) => {
+interface CircleProps {
+    d: number;
+    circum: number;
+    circArea: number;
+}
+
+const circle = (radius: number): CircleProps => {
     const d = radius * 2;
     const circum = Math.PI * d;
     const circArea = Math.PI * (radius ** 2);
@@ -15,9 +21,9 @@ const circle = (radius: number) => {
     return { d, circum, circArea }
 }
 
-const { d: resultD, circum: resultCircum, circArea: resultCircArea} = circle(5);
+const { d, circum, circArea } = circle(5);
 
-console.log(`diameter: ${resultD}, circumference: ${resultCircum}, area: ${resultCircArea}`);
+console.log(`diameter: ${d}, circumference: ${circum}, area: ${circArea}`);
 
 // 3. Find angle
 const angle = (a: number, b: number): number => {
