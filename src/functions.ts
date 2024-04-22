@@ -14,3 +14,8 @@ function triangle(a:number, b:number){
     return 180-a-b;
 }
 
+function dateDiff(date1:Date, date2:Date){
+    let difference:number = date2.getTime() - date1.getTime();
+    let diffDays:number = difference/(1000 * 3600 * 24);
+    return diffDays
+}

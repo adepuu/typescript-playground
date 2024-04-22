@@ -10,3 +10,8 @@ function circle(radius) {
 function triangle(a, b) {
     return 180 - a - b;
 }
+function dateDiff(date1, date2) {
+    var difference = date2.getTime() - date1.getTime();
+    var diffDays = difference / (1000 * 3600 * 24);
+    return diffDays;
+}
