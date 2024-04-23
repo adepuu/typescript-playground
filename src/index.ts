@@ -24,7 +24,7 @@ console.log("============================");
 console.log(angle);
 
 var date1:string = "2024-03-19";
-var date2:string = "2024-03-21";
+var date2:string = "2024-03-25";
 const diffDate = findDiffDate(date1, date2);
 console.log("============================");
 console.log(diffDate);

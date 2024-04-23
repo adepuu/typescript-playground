@@ -5,9 +5,10 @@ export function rectangleArea (length:number, width:number):number{
 
 // function to get detailcircle
 export function detailCircle (radius:number):string{
+    const pi:number = 3.14159;
     let diameter:number = 2*radius;
-    let circum:number = 2*radius* Math.PI;
-    let area:number = Math.pow(radius, 2)* Math.PI;
+    let circum:number = 2*radius* pi;
+    let area:number = (radius**2)* pi;
 
     return `diameter = ${diameter}, circumference = ${circum.toFixed(4)}, area = ${area.toFixed(4)}`;
 }
